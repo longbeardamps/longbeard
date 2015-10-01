@@ -21,7 +21,7 @@
           <a href="index.html" title="Longbeard Amps"><img src="images/longbeard-logo.png" style="width:145px; height:auto; margin-left: 15px;"></a>
 					<nav id="nav">
 						<ul>
-							<li><a href="#contact">Contact</a></li>
+							<li><a href="#contact" class="nav-link">Contact</a></li>
 						</ul>
 					</nav>
 				</header>
@@ -265,6 +265,16 @@
           $(".special").fitVids();
           var param = getQueryVariable("thanks");
           if (param == "true") { $('#banner').prepend("<div class='alert alert-thanks' role='alert'>Thank you for contacting Longbeard. Someone will be back with you shortly!</div>"); }
+          $('.nav-link').on('click',function (e) {
+            e.preventDefault();
+            var target = this.hash,
+            $target = $(target);
+            $('html, body').stop().animate({
+              'scrollTop': $target.offset().top
+            }, 900, 'swing', function () {
+              window.location.hash = target;
+            });
+          });
         });
 </script>
 	</body>
