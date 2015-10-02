@@ -37,7 +37,7 @@
           <a href="index.html" title="Longbeard Amps"><img src="images/longbeard-logo.png" style="width:145px; height:auto; margin-left: 15px;"></a>
 					<nav id="nav">
 						<ul>
-							<li><a href="#contact" class="nav-link">Contact</a></li>
+							<li><a href="#contact" class="smooth-scroll nav-link">Contact</a></li>
 						</ul>
 					</nav>
 				</header>
@@ -47,7 +47,7 @@
 					<img src="images/longbeard-logo.png" style="width: 100%; max-width:700px; height:auto;">
 					<p>Tube Guitar Amplifiers, Handmade In Waterloo, Illinois, USA</p>
 					<ul class="actions">
-						<li><a href="#contact" class="button">Pre-Order The Tritone</a></li>
+						<li><a href="#contact" class="smooth-scroll button">Pre-Order The Tritone</a></li>
 					</ul>
 				</section>
 
@@ -283,7 +283,7 @@
           $(".special").fitVids();
           var param = getQueryVariable("thanks");
           if (param == "true") { $('#banner').prepend("<div class='alert alert-thanks' role='alert'>Thank you for contacting Longbeard. Someone will be back with you shortly!</div>"); }
-          $('.nav-link').on('click',function (e) {
+          $('.smooth-scroll').on('click',function (e) {
             e.preventDefault();
             var target = this.hash,
             $target = $(target);
