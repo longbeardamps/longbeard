@@ -2871,6 +2871,10 @@
 				color: #fff !important;
 			}
 
+    #header-logo {
+        margin: 6px 0 0 15px;
+      }
+
 		#header nav {
 			height: inherit;
 			line-height: inherit;
@@ -3091,6 +3095,12 @@
 				color: #dbe9da;
 			}
 
+      #banner-logo {
+        max-width:700px;
+        width:100%;
+        height:auto;
+      }
+
 /* Footer */
 
 	#footer {
@@ -3273,7 +3283,7 @@
 
 			#header {
 				display: none;
-			}
+			} 
 
 		/* Banner */
 
